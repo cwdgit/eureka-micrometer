@@ -80,7 +80,7 @@ EXPOSE 8761
 
 部署到k8s环境中,通过clusterip加端口访问监控项，我们可以访问到暴露的metrics
 
-![image-20191218195249385](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218195249385.png)
+![image-20191218195249385](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218195249385.png)
 
 prometheus抽取数据，因为prometheus部署在k8s中，prometheus 的operator会提供对应的crd资源，他会去创建`Prometheus`、`ServiceMonitor`、`AlertManage`r以及`PrometheusRule`4个CRD资源对象，然后会一直监控并维持这4个资源对象的状态。
 
@@ -112,7 +112,7 @@ spec:
 
 创建完成，在prometheus内就能发现对应的targets
 
-![image-20191218200323220](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200323220.png)
+![image-20191218200323220](https://github.com/cwdgit/eureka-micrometer/blob/master/image/WX20191219-112555%402x.png)
 
 在console的地方也能搜到对应的metrics![image-20191218200425976](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200425976.png)
 
