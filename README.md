@@ -114,19 +114,19 @@ spec:
 
 ![image-20191218200323220](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200323220.png)
 
-在console的地方也能搜到对应的metrics![image-20191218200425976](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200425976.png)
+在console的地方也能搜到对应的metrics![image-20191218200425976](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200425976.png)
 
 prometheus能抽取到数据，展示就很容易了，在grafana中导入，展示指标
 
-![image-20191218200616148](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200616148.png)
+![image-20191218200616148](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200616148.png)
 
 可以自己创建图形展示或者用官方提供的模板
 
-![image-20191218200808017](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200808017.png)
+![image-20191218200808017](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200808017.png)
 
 官方模板效果
 
-![image-20191218200921722](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200921722.png)
+![image-20191218200921722](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200906083.png)
 
-![image-20191218200906083](/Users/caowendong/Library/Application Support/typora-user-images/image-20191218200906083.png)
+![image-20191218200906083](https://github.com/cwdgit/eureka-micrometer/blob/master/image/image-20191218200921722.png)
 
