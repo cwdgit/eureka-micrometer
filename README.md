@@ -21,8 +21,7 @@ grafana: 是一款采用 go 语言编写的开源应用，主要用于大规模�
 ### 实现过程：
 
 我们拿一个简单的eureka应用来操作
-
-[https://github.com/cwdgit/eureka-micrometer]: 
+This is an [example link](https://github.com/cwdgit/eureka-micrometer/ "With a Title"). 
 
 在pom.xml文件中添加micrometer的依赖
 
