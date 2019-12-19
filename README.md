@@ -92,7 +92,7 @@ kind: ServiceMonitor
 metadata:
   annotations:
   labels:
-    prometheus: kube-prometheus
+    prometheus: kube-prometheus   # 要被对应的Prometheus resource的serviceMonitorSelector匹配到
     release: kube-prometheus
   name: eureka
   namespace: alauda-system
@@ -101,13 +101,13 @@ spec:
   - honorLabels: true
     interval: 15s
     path: /actuator/prometheus
-    port: tcp-8761-8761
-  namespaceSelector:
+    port: tcp-8761-8761 # 匹配service的port name
+  namespaceSelector:   # SM根据namespaceSelector的配置去匹配Service的NS
     matchNames:
-    - project1-dev
+    - project1-dev     
   selector:
     matchLabels:
-      app.alauda.io/name: eureka-micrometers.project1-dev
+      app.alauda.io/name: eureka-micrometers.project1-dev   #匹配service的label
 ```
 
 创建完成，在prometheus内就能发现对应的targets
